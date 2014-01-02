@@ -133,6 +133,11 @@ PRODUCT_COPY_FILES += \
 # Boot animation include
 #ifneq ($(TARGET_SCREEN_WIDTH) $(TARGET_SCREEN_HEIGHT),$(space))
 
+# HFM Files
+PRODUCT_COPY_FILES += \
+	vendor/io/prebuilt/common/etc/hosts.alt:system/etc/hosts.alt \
+	vendor/io/prebuilt/common/etc/hosts.og:system/etc/hosts.og
+
 # determine the smaller dimension
 #TARGET_BOOTANIMATION_SIZE := $(shell \
 #  if [ $(TARGET_SCREEN_WIDTH) -lt $(TARGET_SCREEN_HEIGHT) ]; then \
