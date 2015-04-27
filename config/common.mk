@@ -130,6 +130,15 @@ PRODUCT_COPY_FILES += \
      vendor/io/prebuilt/common/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
      vendor/io/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
 
+# CM Platform Library Resource Package
+PRODUCT_PACKAGES += \
+    org.cyanogenmod.platform-res
+
+# CM Platform Library
+PRODUCT_PACKAGES += \
+    org.cyanogenmod.platform \
+    org.cyanogenmod.platform.xml
+
 # Boot animation include
 #ifneq ($(TARGET_SCREEN_WIDTH) $(TARGET_SCREEN_HEIGHT),$(space))
 
