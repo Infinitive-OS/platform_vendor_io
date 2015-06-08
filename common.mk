@@ -132,4 +132,7 @@ ifneq ($(TARGET_BUILD_VARIANT),eng)
 ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=1
 endif
 
+# Versioning System For InfinitiveOS
+-include vendor/io/version.mk
+
 $(call inherit-product-if-exists, vendor/extra/product.mk)
