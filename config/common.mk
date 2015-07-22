@@ -76,6 +76,8 @@ PRODUCT_PACKAGES += \
     IOLauncher \
     libscreenrecorder \
     ScreenRecorder \
+    WallpaperPicker \
+    LockClock \
     su
 
 # Optional packages
