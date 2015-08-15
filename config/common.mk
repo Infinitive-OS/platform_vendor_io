@@ -78,6 +78,7 @@ PRODUCT_PACKAGES += \
     ScreenRecorder \
     WallpaperPicker \
     LockClock \
+    KernelAdiutor \
     su
 
 # Optional packages
