@@ -73,7 +73,7 @@ PRODUCT_PACKAGES += \
     SpareParts \
     Superuser \
     IOWallpapers \
-    IOLauncher \
+    SlimLauncher \
     libscreenrecorder \
     ScreenRecorder \
     LockClock \
