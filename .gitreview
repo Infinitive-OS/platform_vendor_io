@@ -2,4 +2,4 @@
 host=gerrit.aogp-devs.com
 port=29418
 project=vendor_io.git
-defaultbranch=io-1.0
+defaultbranch=m-6.0
