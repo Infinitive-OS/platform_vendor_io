@@ -18,22 +18,22 @@ PRODUCT_PROPERTY_OVERRIDES += persist.sys.dun.override=0
 
 # Bootanimation
 PRODUCT_COPY_FILES += \
-    vendor/aosp/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip
+    vendor/io/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip
 
 # init.d support
 PRODUCT_COPY_FILES += \
-    vendor/aosp/prebuilt/common/bin/sysinit:system/bin/sysinit \
-    vendor/aosp/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
-    vendor/aosp/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit
+    vendor/io/prebuilt/common/bin/sysinit:system/bin/sysinit \
+    vendor/io/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
+    vendor/io/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit
 
 # Init file
 PRODUCT_COPY_FILES += \
-    vendor/aosp/prebuilt/common/etc/init.local.rc:root/init.local.rc
+    vendor/io/prebuilt/common/etc/init.local.rc:root/init.local.rc
 
 # Bring in camera effects
 PRODUCT_COPY_FILES +=  \
-    vendor/aosp/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
-    vendor/aosp/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd
+    vendor/io/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
+    vendor/io/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
@@ -93,24 +93,24 @@ PRODUCT_PACKAGES += \
 
 # World APN list
 PRODUCT_COPY_FILES += \
-    vendor/aosp/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
+    vendor/io/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
 
 # Selective SPN list for operator number who has the problem.
 PRODUCT_COPY_FILES += \
-    vendor/aosp/prebuilt/common/etc/selective-spn-conf.xml:system/etc/selective-spn-conf.xml
+    vendor/io/prebuilt/common/etc/selective-spn-conf.xml:system/etc/selective-spn-conf.xml
 
 # Overlays & Include LatinIME dictionaries
 PRODUCT_PACKAGE_OVERLAYS += \
-	vendor/aosp/overlay/common \
-	vendor/aosp/overlay/dictionaries
+	vendor/io/overlay/common \
+	vendor/io/overlay/dictionaries
 
 # Proprietary latinime libs needed for Keyboard swyping
 ifneq ($(filter arm64,$(TARGET_ARCH)),)
 PRODUCT_COPY_FILES += \
-    vendor/aosp/prebuilt/common/lib/libjni_latinime.so:system/lib/libjni_latinime.so
+    vendor/io/prebuilt/common/lib/libjni_latinime.so:system/lib/libjni_latinime.so
 else
 PRODUCT_COPY_FILES += \
-    vendor/aosp/prebuilt/common/lib64/libjni_latinime.so:system/lib64/libjni_latinime.so
+    vendor/io/prebuilt/common/lib64/libjni_latinime.so:system/lib64/libjni_latinime.so
 endif
 
 # by default, do not update the recovery with system updates
