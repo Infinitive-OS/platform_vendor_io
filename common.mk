@@ -74,6 +74,14 @@ PRODUCT_PACKAGES += \
     strace \
     Terminal
 
+# Dashplayer
+PRODUCT_PACKAGES += \
+    libdashplayer \
+    qcmediaplayer
+
+PRODUCT_BOOT_JARS += \
+    qcmediaplayer
+
 # Stagefright FFMPEG plugin
 PRODUCT_PACKAGES += \
     libffmpeg_extractor \
