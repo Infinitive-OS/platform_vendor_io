@@ -18,7 +18,7 @@ PRODUCT_PROPERTY_OVERRIDES += persist.sys.dun.override=0
 
 # Bootanimation
 PRODUCT_COPY_FILES += \
-    vendor/io/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip
+    vendor/io/prebuilt/common/media/bootanimations/720/bootanimation.zip:system/media/bootanimation.zip
 
 # Include LatinIME dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/aosp/overlay/dictionaries
