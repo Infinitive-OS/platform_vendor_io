@@ -46,6 +46,7 @@ PRODUCT_COPY_FILES += \
 # Misc packages
 PRODUCT_PACKAGES += \
     BluetoothExt \
+    SlimLauncher \
     MusicFX \
     libemoji \
     libsepol \
