@@ -20,9 +20,6 @@ PRODUCT_PROPERTY_OVERRIDES += persist.sys.dun.override=0
 PRODUCT_COPY_FILES += \
     vendor/io/prebuilt/common/media/bootanimations/720/bootanimation.zip:system/media/bootanimation.zip
 
-# Include LatinIME dictionaries
-PRODUCT_PACKAGE_OVERLAYS += vendor/aosp/overlay/dictionaries
-
 # init.d support
 PRODUCT_COPY_FILES += \
     vendor/io/prebuilt/common/bin/sysinit:system/bin/sysinit \
@@ -49,7 +46,6 @@ PRODUCT_COPY_FILES += \
 # Misc packages
 PRODUCT_PACKAGES += \
     BluetoothExt \
-    Browser \
     MusicFX \
     libemoji \
     libsepol \
@@ -73,14 +69,6 @@ PRODUCT_PACKAGES += \
     sqlite3 \
     strace \
     Terminal
-
-# Dashplayer
-PRODUCT_PACKAGES += \
-    libdashplayer \
-    qcmediaplayer
-
-PRODUCT_BOOT_JARS += \
-    qcmediaplayer
 
 # Stagefright FFMPEG plugin
 PRODUCT_PACKAGES += \
